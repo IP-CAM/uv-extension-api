@@ -1,0 +1,34 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "This file is @generated automatically. Avoid making changes to this file directly."
+    ],
+    "packages": [
+        {
+            "name": "uvdesk/ecommerce",
+            "description": "The eCommerce package brings various ecommerce related functionalities to your community helpdesk system.",
+            "type": "uvdesk-module",
+            "autoload": {
+                "UVDesk\\CommunityPackages\\UVDesk\\ECommerce\\": "src/"
+            },
+            "package": {
+                "UVDesk\\CommunityPackages\\UVDesk\\ECommerce\\ECommercePackage": [
+                    "all"
+                ]
+            }
+        },
+        {
+            "name": "uvdesk/package",
+            "description": "Package Description",
+            "type": "uvdesk-module",
+            "autoload": {
+                "UVDesk\\CommunityPackages\\UVDesk\\Package\\": "src/"
+            },
+            "package": {
+                "UVDesk\\CommunityPackages\\UVDesk\\Package\\PackageConfig": [
+                    "all"
+                ]
+            }
+        }
+    ]
+}

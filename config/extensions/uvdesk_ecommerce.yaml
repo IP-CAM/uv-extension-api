@@ -1,0 +1,31 @@
+uvdesk_ecommerce:
+    bigcommerce:
+        channels:
+            -
+                id: 9pf9zc159t
+                domain: example.anmolshopiy.com
+                store_hash: 9pf9zc159t
+                api_token: j4zdyekjffxglrtunbgk1mqqjepctvh
+                api_client_id: 3s28onnas4ntt3ug77tijacoupbseru
+
+
+
+    magento:
+        channels:
+            -
+                id: 1
+                domain: 127.0.0.1/magento
+                api_username: anmol
+                api_password: keykeykey
+                
+    opencart:
+        channels:
+            -
+                id: cf3054c4590dd1fc1b87fb3053
+                domain: localhost:8000
+                api_key: d8Po3e4YOppYaXsyIjvijljPsg1YqQjKgpZLnYy3pDyrZd1M69m3ocrbVbtX0KJI0q7pEk1BuWNtzzbG942ytvgorYkrRbLWbQ9NAGC3RLtHyupK5eZ2Qpldpm8R5uOoT58wsMWmkx93cdSOyqVTREhcgZxGVv6xlYBwdXnRXIWZ09TfSTQIPwuVcjlcGw0K4XugOJzIF6goOYt5Pit1dLU2bAa2UXOoHjMOVT00rpQTUoYPjg3w653Ho1OuyyJe
+        
+
+
+
+uvdesk_ecommerce: ~

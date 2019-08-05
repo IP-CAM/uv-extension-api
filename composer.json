@@ -1,0 +1,59 @@
+{
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": "^7.0",
+        "uvdesk/composer-plugin": "^1.0",
+        "symfony/flex": "^1.0",
+        "uvdesk/core-framework": "^1.0",
+        "uvdesk/automation-bundle": "^1.0",
+        "uvdesk/support-center-bundle": "^1.0",
+        "uvdesk/mailbox-component": "^1.0",
+        "uvdesk/extension-framework": "^1.0"
+    },
+    "require-dev": {
+        "symfony/dotenv": "^3.4",
+        "symfony/var-dumper": "^3.4",
+        "symfony/maker-bundle": "^1.0",
+        "symfony/profiler-pack": "*",
+        "symfony/web-server-bundle": "^3.4"
+    },
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "UVDesk\\CommunityPackages\\UVDesk\\ECommerce\\": "apps/uvdesk/ecommerce/src/",
+            "UVDesk\\CommunityPackages\\UVDesk\\Package\\": "apps/uvdesk/package/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@auto-scripts"
+        ],
+        "post-update-cmd": [
+            "@auto-scripts"
+        ],
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+        }
+    },
+    "conflict": {
+        "symfony/symfony": "*",
+        "symfony/website-skeleton": "*"
+    },
+    "minimum-stability": "dev"
+}

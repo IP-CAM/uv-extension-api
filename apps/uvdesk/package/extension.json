@@ -1,0 +1,17 @@
+{
+    "name": "uvdesk/package",
+    "description": "Package Description",
+    "type": "uvdesk-module",
+    "authors": [
+        {
+            "name": "Akshay Kumar",
+            "email": "akshay.kumar758@webkul.com"
+        }
+    ],
+    "autoload": {
+        "UVDesk\\CommunityPackages\\UVDesk\\Package\\": "src/"
+    },
+    "package": {
+        "UVDesk\\CommunityPackages\\UVDesk\\Package\\PackageConfig": ["all"]
+    }
+}
